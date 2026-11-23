@@ -22,7 +22,11 @@
     "zip:compressDir": "node src/zip/compressDir.js",
     "zip:decompressDir": "node src/zip/decompressDir.js",
     "wt:main": "node src/wt/main.js",
-    "cp:execCommand": "node src/cp/execCommand.js \"echo 'Hello World'\""
+    "cp:execCommand": "node src/cp/execCommand.js \"echo 'Hello World'\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -34,5 +38,13 @@
     "assignments"
   ],
   "author": "alreadybored",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1"
+  }
 }
